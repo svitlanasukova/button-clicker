@@ -1,0 +1,31 @@
+.app {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	.buttons {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	button {
+		background: #54027a;
+		color: #ffffff;
+		border: 1px dashed #ffffff;
+		border-radius: 0px;
+		transition: all 0.2s ease-in-out;
+		&:focus {
+			outline: none;
+			border-color: violet;
+			color: violet;
+		}
+		&.first {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
